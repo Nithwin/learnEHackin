@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SecureBox</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body style="align-items: flex-start; padding-top: 10vh;">
+    <div class="login-container" style="max-width: 600px;">
+        <h1>Welcome Back</h1>
+
+        <p class="subtitle" style="font-size: 1.2rem; margin-bottom: 2rem;">
+            Hello, <%= fullName %>!
+        </p>
+
+        <div
+            style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid var(--accent);">
+            <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;">Security Status</p>
+            <p style="font-size: 0.9rem; line-height: 1.5;">
+                Your account is currently active.
+            </p>
+        </div>
+
+        <div class="footer-links"
+            style="margin-top: 2rem; display: flex; flex-direction: row; gap: 1rem; justify-content: center;">
+            <a href="/profile" style="color: var(--primary);">Edit Profile</a>
+            <a href="/logout" style="color: #ef4444;">Sign Out</a>
+        </div>
+    </div>
+</body>
+
+</html>

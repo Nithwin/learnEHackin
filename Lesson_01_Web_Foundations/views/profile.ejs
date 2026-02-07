@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - SecureBox</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="/profile" method="POST" class="login-form">
+            <h1>Update Profile</h1>
+            <p class="subtitle">Change your display name</p>
+
+            <div class="input-group">
+                <label for="newName">Display Name</label>
+                <input type="text" id="newName" name="newName" value="<%= fullName %>" required>
+            </div>
+
+            <button type="submit" class="login-btn">Save Changes</button>
+            <div class="footer-links">
+                <a href="/home">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

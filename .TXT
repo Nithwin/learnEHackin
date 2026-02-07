@@ -1,0 +1,1 @@
+Network Sniffing: If a site uses http (not https), anyone on the same Wi-Fi can use a tool like Wireshark to see the headers as they fly through the air.

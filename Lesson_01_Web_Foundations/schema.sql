@@ -1,0 +1,12 @@
+-- Create users table
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    full_name VARCHAR(100) NOT NULL
+);
+
+-- Insert a dummy user
+INSERT INTO users (username, password, full_name) 
+VALUES ('admin', 'password123', 'Administrator')
+ON CONFLICT (username) DO NOTHING;
